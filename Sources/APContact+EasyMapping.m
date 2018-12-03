@@ -7,6 +7,7 @@
 //
 
 #import "APContact+EasyMapping.h"
+#import "NSDateFormatter+CKEasyMappingAdditions.h"
 
 @implementation APContact (APContact_EasyMapping)
 

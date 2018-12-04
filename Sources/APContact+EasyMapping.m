@@ -142,8 +142,8 @@
 
 + (EKObjectMapping *)objectMapping {
   return [EKObjectMapping mappingForClass:self withBlock:^(EKObjectMapping *mapping) {
-    [mapping mapKeyPath:@"creationDate" toProperty:@"creationDate" withDateFormatter:[NSDateFormatter ek_formatterForCurrentThread]];
-    [mapping mapKeyPath:@"modificationDate" toProperty:@"modificationDate" withDateFormatter:[NSDateFormatter ek_formatterForCurrentThread]];
+    [mapping mapKeyPath:@"creationDate" toProperty:@"creationDate" withDateFormatter:[NSDateFormatter ck_formatterForCurrentThread]];
+    [mapping mapKeyPath:@"modificationDate" toProperty:@"modificationDate" withDateFormatter:[NSDateFormatter ck_formatterForCurrentThread]];
   }];
 }
 

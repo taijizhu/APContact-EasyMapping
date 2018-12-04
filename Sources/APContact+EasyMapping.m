@@ -25,7 +25,7 @@
     [mapping hasMany:[APEmail class] forKeyPath:@"emails"];
     [mapping hasMany:[APAddress class] forKeyPath:@"addresses"];
     [mapping hasMany:[APSocialProfile class] forKeyPath:@"socialProfiles"];
-    [mapping mapKeyPath:@"birthday" toProperty:@"birthday" withDateFormatter:[NSDateFormatter ek_formatterForCurrentThread]];
+    [mapping mapKeyPath:@"birthday" toProperty:@"birthday" withDateFormatter:[NSDateFormatter ck_formatterForCurrentThread]];
     [mapping hasMany:[APRelatedPerson class] forKeyPath:@"relatedPersons"];
     [mapping hasOne:[APSource class] forKeyPath:@"source"];
     [mapping hasOne:[APRecordDate class] forKeyPath:@"recordDate"];
